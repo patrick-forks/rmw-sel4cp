@@ -48,7 +48,7 @@ set(rmw_sources
   "src/validate_node_name.c"
 )
 set_source_files_properties(${rmw_sources} PROPERTIES LANGUAGE "C")
-add_library(${PROJECT_NAME} ${rmw_sources})
+add_library(${PROJECT_NAME} STATIC ${rmw_sources})
 target_include_directories(${PROJECT_NAME} PUBLIC
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
   "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
