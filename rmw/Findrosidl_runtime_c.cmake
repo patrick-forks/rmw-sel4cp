@@ -1,4 +1,4 @@
 
 include_directories(
-        /usr/local/include/rosidl_runtime_c
+        ~/ros2/include/rosidl_runtime_c/
 )
